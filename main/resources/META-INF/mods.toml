@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+[[mods]]
+modId="jujutsuslop"
+version="${file.jarVersion}"
+displayName="Jujutsu Slop"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+
+# Fixed dependency header below (changed from ${mod_id} to jujutsuslop)
+[[dependencies.jujutsuslop]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# Fixed dependency header below (changed from ${mod_id} to jujutsuslop)
+[[dependencies.jujutsuslop]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
